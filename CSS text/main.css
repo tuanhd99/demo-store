@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'P'
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background: #000;
+
+}
+.content{
+    position: relative;
+}
+.content h2{
+    position: absolute;
+    color: #fff;
+    transform: translate(-50% ,-50%);
+    font-size: 8rem;
+
+}
+.content h2:nth-child(1)
+{
+    color: transparent;
+    -webkit-text-stroke: 2px #03a9f4;
+}
+.content h2:nth-child(2)
+{
+    color: #03a9f4;
+    animation:  animate 4s ease-in-out infinite;
+   
+}
+@keyframes animate{
+    0%,100%{
+        clip-path: polygon(0 43%, 15% 50%, 30% 61%, 48% 66%, 70% 64%, 86% 57%, 100% 48%, 100% 100%, 1% 100%);
+        
+    }
+    50%{
+        clip-path: polygon(0 60%, 14% 59%, 31% 60%, 48% 60%, 66% 48%, 82% 44%, 100% 50%, 100% 100%, 1% 100%);
+    }
+
+       
+        
+}

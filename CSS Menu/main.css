@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+html,body{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #f2f2f2;
+
+}
+.container{
+    height: 80px;
+    width: 50vw;
+    background: #fff;
+    box-shadow:  0 10px 20px rgba(0, 0, 0, 0.25);
+    line-height: 80px;
+    /* position: relative; */
+
+
+}
+.container .menu{
+    display: flex;
+    position: relative;
+}
+.container .menu li{
+    list-style: none;
+    flex: 1;
+    font-size: 30px;
+    cursor: pointer;
+    user-select: none;
+}
+.container .menu li a{
+    color: #1d1f20;
+    transition: color 0.3s ease;
+}
+.container .menu li:hover a{
+    color: #f23b26;
+}
+.container .menu li:first-child a{
+    color: #f23b26;
+    
+}
+.container .menu .line{
+    height: 5px;
+    width: 20%;
+    background: #f23b26;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    transition: all 0.3s ease;
+}
+.container .menu li:nth-child(2):hover ~ .line{
+    left: 20%;
+}
+.container .menu li:nth-child(3):hover ~ .line{
+    left: 40%;
+}
+.container .menu li:nth-child(4):hover ~ .line{
+    left: 60%;
+}
+.container .menu li:nth-child(5):hover ~ .line{
+    left: 80%;
+}
+

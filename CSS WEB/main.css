@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.top_bar{
+    background-color: deeppink;
+}
+.top_bar .row{
+    display: flex;
+    justify-content: space-around;
+    padding: 8px 0;
+}
+.top_bar_social-list{
+    display: flex;
+    flex-flow: row nowrap;
+    list-style: none;
+    align-items: center;
+
+}
+.top_bar_social-list >li{
+    margin-right: 1rem;
+}

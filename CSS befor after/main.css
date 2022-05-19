@@ -1,0 +1,28 @@
+
+.icon{
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+    background-color: rgb(80, 20, 20); 
+    color: rgb(0, 132, 255);
+    position: relative;
+    margin: 130px auto;
+}
+.icon::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    top: 0;
+    left: 0;
+    background-color: currentColor;
+    position: absolute;
+    opacity: 0.25;
+}
+.fas{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
